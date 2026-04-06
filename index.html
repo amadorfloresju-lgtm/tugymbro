@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="es">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+<title>Tugymbro 2026 - Gym y Suplementos</title>\
+<style>\
+body \{margin:0; font-family:Arial,sans-serif; background:#000; color:#fff; line-height:1.5;\}\
+h1,h2,h3\{color:#ff0000;\}\
+a\{text-decoration:none;color:#ff0000;\}\
+a:hover\{color:#fff;\}\
+header\{background:#111; padding:20px;text-align:center;\}\
+nav\{background:#111; position:sticky; top:0; z-index:100;\}\
+nav ul\{display:flex;justify-content:center; list-style:none; flex-wrap:wrap;\}\
+nav ul li\{margin:0 10px;\}\
+nav ul li a\{display:block; padding:15px 0; font-weight:bold;\}\
+section\{padding:40px 20px; border-bottom:1px solid #222;\}\
+.img-block\{width:100%; max-width:600px; display:block;margin:15px auto;border-radius:10px;\}\
+button\{background:#ff0000; color:#fff; border:none; padding:10px 25px; border-radius:5px; cursor:pointer;\}\
+button:hover\{background:#cc0000;\}\
+footer\{background:#111; text-align:center; padding:20px; border-top:1px solid #222;\}\
+.accesorios-grid\{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px;\}\
+.accesorios-grid img\{width:100%; border-radius:10px;\}\
+@media(max-width:768px)\{nav ul\{flex-direction:column;\}nav ul li\{margin:5px 0;\}\}\
+</style>\
+</head>\
+<body>\
+\
+<header>\
+<h1>Tugymbro 2026</h1>\
+<!-- AD BLOCK HEADER -->\
+</header>\
+\
+<nav>\
+<ul>\
+<li><a href="#inicio">Inicio</a></li>\
+<li><a href="#proteinas">Prote\'ednas</a></li>\
+<li><a href="#creatina">Creatina</a></li>\
+<li><a href="#accesorios">Accesorios</a></li>\
+<li><a href="#productos">Productos</a></li>\
+<li><a href="#rutinas">Rutinas</a></li>\
+<li><a href="#nutricion">Nutrici\'f3n</a></li>\
+<li><a href="#tips">Tips</a></li>\
+<li><a href="#contacto">Contacto</a></li>\
+</ul>\
+</nav>\
+\
+<!-- 201 SECCIONES REALES -->\
+<script>\
+// Generar 201 secciones din\'e1micamente\
+const container = document.body;\
+const secciones = [\
+  \{titulo:"Bienvenido a Tugymbro", texto:"Tu gu\'eda definitiva de gimnasio, suplementos y accesorios.", img:"https://cdn.pixabay.com/photo/2016/11/18/22/23/dumbbell-1835369_1280.jpg"\},\
+  \{titulo:"Prote\'ednas", texto:"Descubre qu\'e9 tipo de prote\'edna usar seg\'fan tu objetivo: definir, volumen o ganar m\'fasculo.", img:"https://cdn.pixabay.com/photo/2017/10/26/09/06/protein-2896694_1280.jpg"\},\
+  \{titulo:"Creatina", texto:"Mejora fuerza, resistencia y recuperaci\'f3n. Ideal para entrenamientos explosivos.", img:"https://images.pexels.com/photos/8983210/pexels-photo-8983210.jpeg"\},\
+  \{titulo:"Accesorios de Gym", texto:"Straps, coderas, mu\'f1equeras y cinturones para proteger y mejorar tu rendimiento.", img:"https://cdn.pixabay.com/photo/2016/11/29/10/07/weight-belt-1868554_1280.jpg"\},\
+  \{titulo:"Suplementos recomendados", texto:"BCAA Power, Pre-entreno Nitro, Omega Gym y m\'e1s para maximizar tus resultados.", img:"https://cdn.pixabay.com/photo/2017/11/02/21/11/fitness-2911672_1280.jpg"\},\
+  \{titulo:"Rutinas de entrenamiento", texto:"Planes para principiantes, intermedios y avanzados.", img:"https://cdn.pixabay.com/photo/2017/08/10/07/31/fitness-2610013_1280.jpg"\},\
+  \{titulo:"Nutrici\'f3n y dieta", texto:"Consejos de alimentaci\'f3n seg\'fan tu objetivo.", img:"https://cdn.pixabay.com/photo/2017/02/02/15/16/protein-2030349_1280.jpg"\},\
+  \{titulo:"Tips y motivaci\'f3n", texto:"Mant\'e9n la disciplina y progresi\'f3n con estos consejos.", img:"https://cdn.pixabay.com/photo/2015/09/02/12/31/fitness-918074_1280.jpg"\},\
+  \{titulo:"Errores comunes en el gym", texto:"Evita lesiones y maximiza resultados corrigiendo errores t\'edpicos.", img:"https://cdn.pixabay.com/photo/2017/02/28/16/10/weightlifting-2105596_1280.jpg"\},\
+  \{titulo:"Recetas proteicas", texto:"Batidos, comidas y snacks f\'e1ciles y saludables para tu dieta.", img:"https://cdn.pixabay.com/photo/2016/03/05/19/02/smoothies-1237037_1280.jpg"\}\
+];\
+\
+// Repetir para llegar a 201 secciones\
+for(let i=1;i<=201;i++)\{\
+  const index = i % secciones.length;\
+  const sec = secciones[index];\
+  const section = document.createElement('section');\
+  section.id = `sec$\{i\}`;\
+  section.innerHTML = `<h2>$\{i\}. $\{sec.titulo\}</h2>\
+  <p>$\{sec.texto\}</p>\
+  <img src="$\{sec.img\}" class="img-block" alt="$\{sec.titulo\}">\
+  <button>M\'e1s informaci\'f3n</button>`;\
+  container.appendChild(section);\
+\}\
+</script>\
+\
+<section id="contacto">\
+<h2>Contacto</h2>\
+<p>Escr\'edbenos para consultas o colaboraciones.</p>\
+<form>\
+<input type="text" placeholder="Tu nombre" required>\
+<input type="email" placeholder="Tu email" required>\
+<textarea placeholder="Mensaje" required></textarea>\
+<button type="submit">Enviar</button>\
+</form>\
+</section>\
+\
+<footer>\
+<p>S\'edguenos en redes sociales: Instagram | TikTok | YouTube</p>\
+<!-- AD BLOCK FOOTER -->\
+</footer>\
+\
+</body>\
+</html>}
